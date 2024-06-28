@@ -1,0 +1,97 @@
+/* PortFolio.css */
+
+.portfolio-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+}
+
+.portfolio-button {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  color: black;
+  padding: 5px;
+  background-color: #d7dce1;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+.portfolio-button:hover {
+  background-color: #b4b9bd;
+  color: black;
+}
+
+.portfolio-button span {
+  margin-left: 5px; 
+}
+
+.portfolio-row-1, .portfolio-row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.portfolio-col {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 10px;
+}
+
+.portfolio-col p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.portfolio-row-1 .portfolio-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-row-1 .portfolio-col p:first-child {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.portfolio-row-2 .portfolio-col {
+  background-color: #e9ecef;
+  font-weight: bold;
+  height: 250px;
+}
+
+.portfolio-col.row2 p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.portfolio-col.row2 p:first-child {
+  text-align: left;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 30px;
+}

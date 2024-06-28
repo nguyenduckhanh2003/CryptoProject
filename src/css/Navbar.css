@@ -1,0 +1,246 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    border: #c6bbbb solid 0.5px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .navbar-logo a{
+    color: #129647;
+    font-size: 25px;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-links .link {
+    color: #333;
+    text-decoration: none;
+    margin-left: 60px;
+    transition: color 0.5s ease; 
+  }
+  
+  .navbar-links .link:hover{
+    color: #129647;
+    text-decoration: underline;
+  }
+  
+  .navbar-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-links a:hover {
+    color: #129647;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar-search input {
+    padding: 5px 10px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .search-icon:hover {
+    color: #000;
+  }
+  
+  .navbar-auth {
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-button {
+    margin: 0 10px; 
+    padding: 8px 16px; 
+    width: 100px; 
+    border-radius: 4px;
+    background-color: #ffff;
+    color: #0f0f0f;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: #333;
+  }
+  .navbar-links .link:hover {
+    text-decoration: none;
+}
+  .auth-button:hover {
+    color: #129647;
+  }
+  
+  .auth-button a {
+    text-decoration: none;
+    color: #fff;
+  }
+    /* .auth-dropdown {
+      position: relative;
+      display: inline-block;
+    } */
+  
+  .auth-button-name {
+    /* background-color: #129647; 
+    padding: 10px 20px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: white;
+  }
+  
+  button:focus, button:focus-visible {
+    outline: none;
+}
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    right : 1px;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .auth-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu .bi-box-arrow-right{
+    font-size: 20px;
+  }
+  
+  .auth-dropdown .bi-person{
+    font-size: 17px;
+  }
+
+  .search-results-list {
+    position: absolute;
+    top: -5px;
+    width: 300px;
+    background-color: white;
+    z-index: 100;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .box-search{
+    position: relative;
+  }
+  .ant-list-item {
+    align-items: start!important;
+  }
+  .search-results-list  .inner-item {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .search-results-list  .inner-item .inner-image{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .search-results-list  .inner-item .inner-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .search-results-list .ant-list-item {
+    cursor: pointer;
+  }
+  
+  .search-results-list .ant-list-item:hover {
+    background-color: #f0f0f0;
+  }
+  .esc-close{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    top: 290px;
+    width: 300px;
+    background:#F1F5F9;
+    cursor: pointer;
+    z-index: 9999;
+    font-weight: 600;
+    color: #94A3B8;;
+  }
+  .esc-close span{
+    font-size: 20px;
+    color: #ffff;
+    line-height: 1rem;
+  }
+  :where(.css-dev-only-do-not-override-3rel02).ant-typography kbd {
+    margin: 0 0.2em;
+    padding-inline: 0.4em;
+    padding-block: 0.15em 0.1em;
+    font-size: 90%;
+    background: #94A3B8;
+    border: 1px solid rgba(100, 100, 100, 0.842);
+    border-bottom-width: 2px;
+    border-radius:7px;
+}
+:where(.css-dev-only-do-not-override-3rel02).ant-empty {
+  margin-inline: 0px;
+
+}

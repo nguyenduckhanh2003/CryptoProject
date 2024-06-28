@@ -1,0 +1,37 @@
+.container-wrapper{
+  padding: 10px;
+}
+
+
+.box-news {
+  display: grid;
+  gap: 16px;
+}
+
+.ant-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ant-card-meta-title {
+  white-space: normal; /* Prevent the title from being truncated */
+  overflow: visible; /* Prevent the title from being truncated */
+  text-overflow: clip; /* Prevent the title from being truncated */
+}
+
+.image-news {
+  width: 100%;
+  height: auto;
+}
+
+.show-more-button {
+  text-align: center;
+  margin-top: 16px;
+}
